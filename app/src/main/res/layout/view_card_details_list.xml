@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/item_layout"
+
+        android:backgroundTint="@color/white"
+
+        app:cardCornerRadius="@dimen/size_8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_15dp"
+            android:paddingLeft="@dimen/size_10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:id="@+id/layout"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_5dp">
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID : "
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/id_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:layout_toRightOf="@+id/txt"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White card No : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/card_no_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:layout_toRightOf="@+id/txt"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/type_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="type"
+                    android:layout_toRightOf="@+id/txt"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DL NO/Pan/Ration/Voter : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/pan_ration_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pan_ration_txt"
+                    android:layout_toRightOf="@+id/txt"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/address_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:layout_toRightOf="@+id/txt"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid Upto : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/valid_upto_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="validupto"
+
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB : "
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/dob_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dob"
+                    android:layout_toRightOf="@+id/txt"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/update_it_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update IT"
+                    android:background="@color/blue"
+                    android:minWidth="@dimen/size_100dp"
+                    android:minHeight="@dimen/size_25dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/update_voting_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Voting"
+                    android:background="@color/blue"
+                    android:minWidth="@dimen/size_130dp"
+                    android:minHeight="@dimen/size_25dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/update_ration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Ration"
+                    android:background="@color/blue"
+                    android:minWidth="@dimen/size_130dp"
+                    android:minHeight="@dimen/size_25dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/size_15dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Complaint"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/user_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="@color/black"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/father_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/black"
+        android:hint="Father Name "/>
+
+    <EditText
+        android:id="@+id/adress_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/black"
+        android:hint="Address"/>
+
+    <EditText
+        android:id="@+id/city_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/black"
+        android:hint="City"/>
+
+    <EditText
+        android:id="@+id/age_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/black"
+        android:hint="Age"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        android:layout_below="@+id/train_txt"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext">
+
+
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/01/23"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/date_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_calender" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/phone_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:textSize="16sp"
+        android:minHeight="50dp"
+        android:padding="10dp"
+        android:maxLines="10"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:hint="Phone"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue"
+        android:text="Post Complaint"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

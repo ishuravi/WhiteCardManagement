@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WhiteCardManagement</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirmation_message">Do you want to close the application?</string>
+    <string name="log_out">Are you sure want to logout the application?</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ChoseLoginActivity">
+
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/white_card_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/officer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Officer Login"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="60dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/admin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Admin login"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:minHeight="60dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/officer_btn"/>
+</RelativeLayout>

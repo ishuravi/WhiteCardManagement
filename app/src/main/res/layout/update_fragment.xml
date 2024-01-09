@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/myTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create DL No/Pan/Ration/Voter"
+                android:textSize="24sp"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/card_number_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/black"
+                android:text="white card No"/>
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textAutoComplete"
+                android:textColorHint="@color/black"
+                android:hint="Name "/>
+
+            <EditText
+                android:id="@+id/pan_ration_voter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:maxLines="12"
+                android:maxLength="12"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/black"
+                android:hint="DL No/Pan/Ration/Voter"/>
+
+            <EditText
+                android:id="@+id/valid_upto_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:maxLength="4"
+                android:maxLines="4"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:hint="Valid Upto"/>
+
+            <EditText
+                android:id="@+id/address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:textSize="16sp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textAutoComplete"
+                android:textColorHint="@color/black"
+                android:hint="Address"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative"
+                android:layout_below="@+id/train_txt"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext">
+
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/01/23"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/date_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_calender" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_50dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginTop="@dimen/size_30dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPassword"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp"
+                android:backgroundTint="@color/blue"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
